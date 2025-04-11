@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     id("kotlin-kapt")
     alias(libs.plugins.hilt.android)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -63,6 +64,15 @@ dependencies {
 
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
+    implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.okhttp)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.hilt.navigation.compose)
+    implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.content.negotiation)
+    implementation(libs.kotlinx.serialization.json)
 }
 
 kapt {
