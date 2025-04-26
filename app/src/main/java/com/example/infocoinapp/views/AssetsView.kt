@@ -1,4 +1,4 @@
-package com.example.infocoinapp
+package com.example.infocoinapp.views
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

@@ -5,6 +5,7 @@ plugins {
     id("kotlin-kapt")
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlin.serialization)
+    id("com.google.gms.google-services") version "4.4.2" apply false
 }
 
 android {
@@ -73,6 +74,11 @@ dependencies {
     implementation(libs.ktor.client.cio)
     implementation(libs.ktor.content.negotiation)
     implementation(libs.kotlinx.serialization.json)
+    implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    // Navigation Compose
+    implementation("androidx.navigation:navigation-compose:2.5.3")
+
 }
 
 kapt {
